@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminAddCompanyController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#93b5c6" height="101.0" stroke="TRANSPARENT" strokeType="INSIDE" width="500.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9ccd5" height="400.0" layoutY="100.0" stroke="TRANSPARENT" strokeType="INSIDE" width="500.0" />
+      <ImageView fitHeight="28.0" fitWidth="100.0" layoutX="107.0" layoutY="34.0">
+         <image>
+            <Image url="@logotext.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="7.0" layoutY="8.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="331.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yönetici Paneli">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="logOutButton" blendMode="DARKEN" layoutX="412.0" layoutY="66.0" mnemonicParsing="false" onAction="#logOut" text="Çıkış Yap">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="companyNameTextField" layoutX="150.0" layoutY="180.0" prefHeight="30.0" prefWidth="200.0" promptText="Firma Adı" />
+      <TextField fx:id="mailTextField" layoutX="150.0" layoutY="220.0" prefHeight="30.0" prefWidth="200.0" promptText="Mail" />
+      <TextField fx:id="contactNumberTextField" layoutX="150.0" layoutY="260.0" prefHeight="30.0" prefWidth="200.0" promptText="İletişim Numarası" />
+      <TextField fx:id="passwordTextField" layoutX="150.0" layoutY="300.0" prefHeight="30.0" prefWidth="200.0" promptText="Şifre" />
+      <Button fx:id="acceptButton" layoutX="190.0" layoutY="364.0" mnemonicParsing="false" onAction="#addCompany" prefHeight="25.0" prefWidth="120.0" text="Onayla" />
+      <Button fx:id="backButton" blendMode="DARKEN" layoutX="333.0" layoutY="66.0" mnemonicParsing="false" onAction="#backToMenu" text="Geri Dön">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="verificationLabel" layoutX="135.0" layoutY="340.0" prefHeight="17.0" prefWidth="230.0" />
+   </children>
+</AnchorPane>

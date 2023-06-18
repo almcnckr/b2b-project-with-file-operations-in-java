@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignUpController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="800.0" stroke="BLACK" strokeType="INSIDE" width="634.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.09917154163122177" green="0.34705570340156555" blue="0.5789473652839661" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6710526347160339" green="0.9243420958518982" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="175.0" fitWidth="175.0" layoutX="118.0" layoutY="47.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="200.0" layoutX="293.0" layoutY="106.0">
+         <image>
+            <Image url="@logotext.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="800.0" fitWidth="866.0" layoutX="634.0">
+         <image>
+            <Image url="@login.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="loginScreenButton" layoutX="262.0" layoutY="677.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="25.0" prefWidth="100.0" text="Müşteri Girişi" />
+      <TextField fx:id="companyNameTextField" layoutX="142.0" layoutY="302.0" prefHeight="38.0" prefWidth="350.0" promptText="Firma Adı">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="mailTextField" layoutX="142.0" layoutY="354.0" prefHeight="38.0" prefWidth="350.0" promptText="Mail">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="contactNumberTextField" layoutX="142.0" layoutY="401.0" prefHeight="38.0" prefWidth="350.0" promptText="İletişim Numarası">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordTextField" layoutX="142.0" layoutY="447.0" prefHeight="38.0" prefWidth="350.0" promptText="Şifre">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="signUpButton" layoutX="262.0" layoutY="517.0" mnemonicParsing="false" onAction="#signUpAction" prefHeight="25.0" prefWidth="100.0" text="Başvur" />
+      <Text layoutX="142.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bayi Başvurusu">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="197.0" layoutY="644.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zaten Müşterimiz misiniz?">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="verificationLabel" layoutX="197.0" layoutY="494.0" prefHeight="17.0" prefWidth="229.0" />
+   </children>
+</AnchorPane>

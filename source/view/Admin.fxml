@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#93b5c6" height="100.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1000.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9ccd5" height="400.0" layoutY="100.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1000.0" />
+      <ImageView fitHeight="28.0" fitWidth="100.0" layoutX="107.0" layoutY="34.0">
+         <image>
+            <Image url="@logotext.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="7.0" layoutY="8.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="817.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yönetici Paneli">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="34.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ürün İşlemleri">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="allProductsButton" layoutX="40.0" layoutY="230.0" mnemonicParsing="false" onAction="#getProducts" prefHeight="25.0" prefWidth="92.0" text="Tüm Ürünler" />
+      <Button fx:id="addProductButton" layoutX="40.0" layoutY="270.0" mnemonicParsing="false" onAction="#getAddProduct" prefHeight="25.0" prefWidth="92.0" text="Ürün Ekle" />
+      <Button fx:id="updateProductButton" layoutX="40.0" layoutY="310.0" mnemonicParsing="false" onAction="#getUpdateProduct" text="Ürün Güncelle" />
+      <Button fx:id="deleteProductButton" layoutX="40.0" layoutY="350.0" mnemonicParsing="false" onAction="#getDeleteProduct" prefHeight="25.0" prefWidth="92.0" text="Ürün Sil" />
+      <Text layoutX="266.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bayi İşlemleri">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="allCompaniesButton" layoutX="268.0" layoutY="230.0" mnemonicParsing="false" onAction="#getCompanies" prefHeight="25.0" prefWidth="87.0" text="Tüm Bayiler" />
+      <Button fx:id="addCompanyButton" layoutX="268.0" layoutY="270.0" mnemonicParsing="false" onAction="#getAddCompany" prefHeight="25.0" prefWidth="87.0" text="Bayi Ekle" />
+      <Button fx:id="updateCompanyButton" layoutX="268.0" layoutY="310.0" mnemonicParsing="false" onAction="#getUpdateCompany" text="Bayi Güncelle" />
+      <Button fx:id="deleteCompanyButton" layoutX="268.0" layoutY="350.0" mnemonicParsing="false" onAction="#getDeleteCompany" prefHeight="25.0" prefWidth="87.0" text="Bayi Sil" />
+      <Button fx:id="updateExchangeRate" layoutX="469.0" layoutY="227.0" mnemonicParsing="false" onAction="#getUpdateExchangeRate" text="Dolar Kuru Güncelle" />
+      <Button fx:id="logOutButton" blendMode="DARKEN" layoutX="857.0" layoutY="62.0" mnemonicParsing="false" onAction="#logOut" text="Çıkış Yap">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text layoutX="469.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kur İşlemleri">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="674.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Başvuru İşlemleri">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="applicationsButton" layoutX="676.0" layoutY="227.0" mnemonicParsing="false" onAction="#getApplications" prefHeight="25.0" prefWidth="87.0" text="Başvurular" />
+      <Text layoutX="469.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sipariş İşlemleri">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="ordersButton" layoutX="469.0" layoutY="350.0" mnemonicParsing="false" onAction="#getOrders" prefHeight="25.0" prefWidth="87.0" text="Siparişler" />
+   </children>
+</AnchorPane>

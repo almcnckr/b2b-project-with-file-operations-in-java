@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminOrderController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7aa5b9" height="600.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1100.0" />
+      <ImageView fitHeight="28.0" fitWidth="100.0" layoutX="107.0" layoutY="34.0">
+         <image>
+            <Image url="@logotext.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="7.0" layoutY="8.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logOutButton" blendMode="DARKEN" layoutX="1019.0" layoutY="62.0" mnemonicParsing="false" onAction="#logOut" text="Çıkış Yap">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TableView fx:id="productsTableView" layoutY="108.0" prefHeight="450.0" prefWidth="1100.0">
+         <columns>
+            <TableColumn fx:id="orderIdTableColumn" maxWidth="150.0" minWidth="0.0" prefWidth="130.0" text="Sipariş Kodu" />
+            <TableColumn fx:id="companyIdTableColumn" maxWidth="150.0" minWidth="0.0" prefWidth="130.0" text="Firma Kodu" />
+            <TableColumn fx:id="imageTableColumn" maxWidth="100.0" minWidth="0.0" prefWidth="100.0" text="Ürün Resmi" />
+            <TableColumn fx:id="productIdTableColumn" maxWidth="150.0" minWidth="0.0" prefWidth="130.0" text="Ürün Kodu" />
+            <TableColumn fx:id="productNameTableColumn" maxWidth="250.0" minWidth="0.0" prefWidth="150.0" text="Ürün Adı" />
+            <TableColumn fx:id="unitPriceTableColumn" maxWidth="150.0" minWidth="0.0" prefWidth="100.0" text="Birim Fiyatı $" />
+            <TableColumn fx:id="numberOfProductTableColumn" maxWidth="150.0" minWidth="0.0" prefWidth="100.0" text="Ürün Sayısı" />
+            <TableColumn fx:id="orderPriceTableColumn" maxWidth="150.0" minWidth="0.0" prefWidth="100.0" text="Sipariş Fiyatı $" />
+            <TableColumn fx:id="orderPrcoessTableColumn" maxWidth="200.0" minWidth="0.0" prefWidth="150.0" text="Sipariş Durumu" />
+         </columns>
+      </TableView>
+      <Button fx:id="backButton" blendMode="DARKEN" layoutX="938.0" layoutY="62.0" mnemonicParsing="false" onAction="#backToMenu" text="Geri Dön">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="completeOrderButton" blendMode="DARKEN" layoutX="466.0" layoutY="570.0" mnemonicParsing="false" onAction="#completeOrder" text="Tamamla">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteOrderButton" blendMode="DARKEN" layoutX="576.0" layoutY="570.0" mnemonicParsing="false" onAction="#deleteOrder" text="İptal Et">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="verificationLabel" layoutX="405.0" layoutY="562.0" prefHeight="17.0" prefWidth="290.0" />
+      <Text layoutX="938.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yönetici Paneli">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
